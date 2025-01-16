@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+.star-wars-title {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 3rem;
+  color: #FFE81F;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #FFE81F;
+  perspective: 400px;
+  transform: rotateX(25deg);
+  animation: glow 1.5s ease-in-out infinite alternate;
+  margin: 2rem 0;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FFE81F;
+  }
+  to {
+    text-shadow: 0 0 20px #FFE81F, 0 0 30px #FFE81F;
+  }
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body{
+  background-color: #000;
+  color: #fff;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.character-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.character-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.character-image {
+  animation: fadeIn 1s ease-in-out;
+}

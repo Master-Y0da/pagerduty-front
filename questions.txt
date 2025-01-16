@@ -1,0 +1,27 @@
+
+1- If you have a user requirement to create a new page what are the steps you take to
+create the solution focusing on (UI,UX, FE)
+
+ Answer: I always focus on the user giving me an explanation with the maximum
+ possible detail about what they expect from the screens, accompanying the process with wireframe design and mockups. 
+ When this is well defined, I move on to the component design stage, always keeping the concept
+ of "view over components" in hierarchy, since I personally do not like to treat each piece of code as a component. 
+ This stage is also when I carry out analysis on technologies that fit well with what I want to do (state management, CSS frameworks, etc.).
+To finally move on to the implementation and subsequent testing stage.
+
+2.Do you have experience using state management libraries? Can you explain how you used it?
+
+ Anser: Yes, I have used the recoil library for a while, for state management in react. 
+ It seems to me to be a perfect tool for grouping logic outside the component in an external layer, 
+ and it also allows data filtering through selectors, which in turn can be treated as independent states
+ to be shared between components. Plus, its learning curve is really simple. I always use it to fetch data from backend
+ and store it as a base state, which in future, can be mutated by selectors.
+
+3. What are some of the code best practices you use in your experience?
+
+ Answer: 
+ - Separation of concerns.
+ - Performance of componentes (process of rendering)
+ - Keep components simples and with single responsability.
+ - Separate UI components from Logic components.
+ - No excesive documentation.
